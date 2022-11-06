@@ -2,7 +2,6 @@
 #include<tchar.h>
 #include <iostream>
 #include"Funtion.h"
-#define UNICODE
 
 using namespace std;
 

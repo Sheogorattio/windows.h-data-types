@@ -112,14 +112,14 @@ TCHAR* pAddChar(TCHAR* str, INT pos, TCHAR ch) {
 	size++;
 	TCHAR* buff = new TCHAR[size];
 	buff[size - 1] = '\0';
-	//for (int i = 0, j=0; i < size; i++, j++) {
-	//	if (i == pos) {
-	//		buff[i] = ch;
-	//		j--;
-	//		continue;
-	//	}
-	//	buff[i] = str[j];
-	//}
+	for (int i = 0, j=0; i < size; i++, j++) {
+		if (i == pos) {
+			buff[i] = ch;
+			j--;
+			continue;
+		}
+		buff[i] = str[j];
+	}
 	//delete[]str;		//////////тут возникает ошибка при попытке очистить память
 	//str = buff;   
 	//delete[]buff;
